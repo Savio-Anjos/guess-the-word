@@ -1,10 +1,13 @@
 
 import './App.scss';
+import StartScrenn from './components/StartScreen';
 
 function App() {
   return (
+   
     <div className="App">
-      <h3>Guess The Word</h3>
+       <StartScrenn />
+     
     </div>
   );
 }
