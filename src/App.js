@@ -33,7 +33,7 @@ function App() {
           
       }
 
-
+      // Start the game
       const startGame = () => {
         setGameStage(stages[1].name);
       }

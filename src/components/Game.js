@@ -1,5 +1,6 @@
 import "./Game.scss";
 import { BsSun, BsFillMoonFill } from 'react-icons/bs';
+import Theme from "./Theme";
 
 const Game = ({ handleTheme, theme,}) => {
   return (
@@ -7,11 +8,7 @@ const Game = ({ handleTheme, theme,}) => {
     <div className={`theme ${theme ? 'light' : 'dark'}`}>
     <div>Game</div>
     <h3>Tema: </h3>
-     {theme ?
-     <span onClick={handleTheme}><BsFillMoonFill size={50} /></span>
-     : <span onClick={handleTheme}> <BsSun size={50} color="#FFF"/></span> 
-     
-     }
+     <Theme  theme={theme} handleTheme={handleTheme}/>
      </div>
 
   )

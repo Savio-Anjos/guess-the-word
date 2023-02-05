@@ -1,6 +1,7 @@
 import './StartScreen.scss'
-import { BsSun, BsFillMoonFill } from 'react-icons/bs';
+
 import { useState } from 'react';
+import Theme from './Theme';
 
 const StartScrenn = ({handleTheme, theme, startGame }) => {
    
@@ -12,12 +13,7 @@ const StartScrenn = ({handleTheme, theme, startGame }) => {
      <h1>Guess The Word </h1>  
      <p>Clique no botão abaixo e comece jogar!</p>
      <button onClick={startGame}>Começar o jogo</button>
-     <h3>Tema: </h3>
-     {theme ?
-     <span onClick={handleTheme}><BsFillMoonFill size={50} /></span>
-     : <span onClick={handleTheme}> <BsSun size={50} color="#FFF"/></span> 
-     
-     }
+     <Theme theme={theme} handleTheme={handleTheme}/>
      
   </div>
   </div> 
