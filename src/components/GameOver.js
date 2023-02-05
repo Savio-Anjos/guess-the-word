@@ -11,4 +11,4 @@ const GameOver = ({ theme, handleTheme, retry }) => {
   )
 }
 
-export default GameOver
+export default GameOver;

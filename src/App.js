@@ -45,7 +45,7 @@ function App() {
 
       // restarts the game
       const retry = () => {
-        setGameStage([0].name)
+        setGameStage(stages[0].name)
       }
 
   return (

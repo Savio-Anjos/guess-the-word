@@ -12,6 +12,7 @@ const StartScrenn = ({handleTheme, theme, startGame }) => {
      <h1>Guess The Word </h1>  
      <p>Clique no botão abaixo e comece jogar!</p>
      <button onClick={startGame}>Começar o jogo</button>
+     
      <Theme theme={theme} handleTheme={handleTheme}/>
      
   </div>
