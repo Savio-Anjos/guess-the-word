@@ -43,6 +43,11 @@ function App() {
         setGameStage(stages[2].name);
       }
 
+      // restarts the game
+      const retry = () => {
+        setGameStage([0].name)
+      }
+
   return (
    
     <div className="App">
@@ -61,6 +66,7 @@ function App() {
        {gameStage === "end" && <GameOver 
        handleTheme={handleTheme} 
        theme={theme}
+       retry={retry}
        />}
      
     </div>
