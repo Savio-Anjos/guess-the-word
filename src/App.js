@@ -24,6 +24,10 @@ function App() {
 
       const [theme, setTheme] = useState(true)
 
+      const [pickedWord, setPickedWord] = useState("");
+      const [pickedCategory, setPickedCategory] = useState("");
+      const [letters, setLetters] = useState([]);
+
       const handleTheme = () => {
           if(theme === true) {
               setTheme(false)
@@ -33,9 +37,21 @@ function App() {
           
       }
 
+      const pickWordAndCategory = () => {
+        const categories = Object.keys(words);
+        const category = categories[Math.floor(Math.random() * Object.keys(categories).length)];
+        
+        console.log(category);
+     
+      };
+
       // Start the game
       const startGame = () => {
+        // pick word and pick category
+        pickWordAndCategory();
+
         setGameStage(stages[1].name);
+
       }
 
       // process the letter input
