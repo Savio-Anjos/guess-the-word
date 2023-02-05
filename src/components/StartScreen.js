@@ -2,17 +2,8 @@ import './StartScreen.scss'
 import { BsSun, BsFillMoonFill } from 'react-icons/bs';
 import { useState } from 'react';
 
-const StartScrenn = ({startGame}) => {
-    const [theme, setTheme] = useState(true)
-
-    const handleTheme = () => {
-        if(theme === true) {
-            setTheme(false)
-        } else {
-            setTheme(true)
-        }
-        
-    }
+const StartScrenn = ({handleTheme, theme, startGame }) => {
+   
   return (
     <>
     <div className={`theme ${theme ? 'light' : 'dark'}`}>

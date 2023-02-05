@@ -22,6 +22,17 @@ function App() {
       const [gameStage, setGameStage] = useState(stages[0].name);
       const [words] = useState(wordsList);
 
+      const [theme, setTheme] = useState(true)
+
+      const handleTheme = () => {
+          if(theme === true) {
+              setTheme(false)
+          } else {
+              setTheme(true)
+          }
+          
+      }
+
 
       const startGame = () => {
         setGameStage(stages[1].name);
@@ -30,8 +41,8 @@ function App() {
   return (
    
     <div className="App">
-       {gameStage === "start" && <StartScrenn startGame={startGame} />}
-       {gameStage === "game" && <Game />}
+       {gameStage === "start" && <StartScrenn handleTheme={handleTheme} theme={theme} startGame={startGame} />}
+       {gameStage === "game" && <Game handleTheme={handleTheme} theme={theme}/>}
        {gameStage === "end" && <GameOver />}
      
     </div>
