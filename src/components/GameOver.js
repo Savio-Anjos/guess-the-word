@@ -1,5 +1,6 @@
-import "./GameOver.scss"
-import Theme from "./Theme"
+import "./GameOver.scss";
+import "./Theme.scss";
+import Theme from "./Theme";
 const GameOver = ({ theme, handleTheme, retry }) => {
   return (
    

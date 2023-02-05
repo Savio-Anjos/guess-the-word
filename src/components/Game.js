@@ -1,4 +1,5 @@
 import "./Game.scss";
+import "./Theme.scss";
 import Theme from "./Theme";
 
 const Game = ({ handleTheme, theme, verifyLetter}) => {
