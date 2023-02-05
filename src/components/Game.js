@@ -1,13 +1,14 @@
 import "./Game.scss";
-import { BsSun, BsFillMoonFill } from 'react-icons/bs';
 import Theme from "./Theme";
 
-const Game = ({ handleTheme, theme,}) => {
+const Game = ({ handleTheme, theme, verifyLetter}) => {
   return (
 
     <div className={`theme ${theme ? 'light' : 'dark'}`}>
-    <div>Game</div>
-    <h3>Tema: </h3>
+    <div>
+        <h1>Game</h1>
+        <button className="button" onClick={verifyLetter}>Finalizar Jogo</button>
+    </div>
      <Theme  theme={theme} handleTheme={handleTheme}/>
      </div>
 

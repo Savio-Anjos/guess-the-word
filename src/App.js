@@ -38,12 +38,30 @@ function App() {
         setGameStage(stages[1].name);
       }
 
+      // process the letter input
+      const verifyLetter = () => {
+        setGameStage(stages[2].name);
+      }
+
   return (
    
     <div className="App">
-       {gameStage === "start" && <StartScrenn handleTheme={handleTheme} theme={theme} startGame={startGame} />}
-       {gameStage === "game" && <Game handleTheme={handleTheme} theme={theme}/>}
-       {gameStage === "end" && <GameOver />}
+       {gameStage === "start" && <StartScrenn 
+       handleTheme={handleTheme} 
+       theme={theme} 
+       startGame={startGame}
+       />}
+
+       {gameStage === "game" && <Game 
+       handleTheme={handleTheme} 
+       theme={theme}
+       verifyLetter={verifyLetter}
+       />}
+
+       {gameStage === "end" && <GameOver 
+       handleTheme={handleTheme} 
+       theme={theme}
+       />}
      
     </div>
   );

@@ -11,3 +11,20 @@
       background: linear-gradient(180deg, #111827 0%, #1f2937 100%);
       color: #FFF;
   }
+
+  .button {
+        background-color: #155e75;
+        width: 15em;
+        height: 4em;
+        border-radius: 1.5em;
+        border: 2px solid #a3a3a3;
+        color: #fff;
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: 1.5s;
+      }
+    
+      button:hover {
+        background-color: #0284c7;
+      }
+  

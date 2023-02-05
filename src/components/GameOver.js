@@ -1,7 +1,12 @@
 import "./GameOver.scss"
-const GameOver = () => {
+import Theme from "./Theme"
+const GameOver = ({ theme, handleTheme }) => {
   return (
-    <div>GameOver</div>
+   
+         <div className={`theme ${theme ? 'light' : 'dark'}`}>
+        <h1>Game Over</h1>
+        <Theme  theme={theme} handleTheme={handleTheme}/>
+    </div>
   )
 }
 

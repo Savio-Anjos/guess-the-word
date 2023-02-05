@@ -1,6 +1,5 @@
 import './StartScreen.scss'
 
-import { useState } from 'react';
 import Theme from './Theme';
 
 const StartScrenn = ({handleTheme, theme, startGame }) => {
