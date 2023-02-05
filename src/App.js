@@ -38,10 +38,15 @@ function App() {
       }
 
       const pickWordAndCategory = () => {
+        // pick a ramdom category
         const categories = Object.keys(words);
         const category = categories[Math.floor(Math.random() * Object.keys(categories).length)];
         
         console.log(category);
+
+        // pick a ramdom word
+        const word = words[category][Math.floor(Math.random() * words[category].length)];
+        console.log(word)
      
       };
 
