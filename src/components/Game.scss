@@ -1,0 +1,82 @@
+.light {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, #e5e7eb 0%, #f9fafb 100%);
+     color: #000;
+  }
+  
+  .dark {
+    height: 100vh;
+    width: 100vw;
+      background: linear-gradient(180deg, #111827 0%, #1f2937 100%);
+      color: #FFF;
+  }
+
+  .game h1 {
+    font-size: 2.5em;
+  }
+
+  .points {
+    margin-top: 2.5em;
+    font-weight: bold;
+  }
+
+  .category {
+    color: #06b6d4;
+  }
+
+  .wordContainer {
+    margin: 1.5em;
+    padding: 1.5em;
+    border: 20px solid #06b6d4;
+    border-radius: 7px;
+    display: flex;
+  }
+
+  .letter,
+  .blankSquare {
+    font-size: 70px;
+    line-height: 1.5;
+    border: 3px solid #000;
+    border-radius: 7px;
+    height: 100px;
+    width: 100px;
+    text-transform: uppercase;
+    background-color: #FFF;
+    color: #000;
+    font-weight: bold;
+
+  }
+
+  .letterContainer {
+    p {
+      font-weight: bold;
+    }
+
+    input {
+      width: 60px;
+      height: 60px;
+      border-radius: 7px;
+      margin-right: 3em;
+      text-align: center;
+    }
+
+    button {
+      background-color: #155e75;
+      width: 10em;
+      height: 3.6em;
+      border-radius: 1.5em;
+      border: 2px solid #a3a3a3;
+      color: #fff;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: 1.5s;
+    }
+  
+    button:hover {
+      background-color: #0284c7;
+    }
+    }
+
+      
+  

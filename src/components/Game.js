@@ -19,6 +19,9 @@ const Game = ({ handleTheme, theme, verifyLetter}) => {
       <div className="wordContainer">
         <span className="letter">A</span>
         <span className="blankSquare"></span>
+        <span className="blankSquare"></span>
+        <span className="blankSquare"></span>
+        <span className="blankSquare"></span>
       </div>
 
       <div className="letterContainer">
