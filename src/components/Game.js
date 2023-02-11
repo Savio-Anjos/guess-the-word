@@ -3,7 +3,17 @@ import "./Theme.scss";
 import Theme from "./Theme";
 import { useState } from "react";
 
-const Game = ({ handleTheme, theme, verifyLetter}) => {
+const Game = ({ 
+  handleTheme, 
+  theme, 
+  verifyLetter,
+  pickedCategory,
+  letters,
+  guessedLetters,
+  wrongLetters,
+  guesses,
+  score,
+}) => {
       const [letter, setLetter] = useState("");
       
       const handleSubmit = (e) => {
@@ -19,22 +29,24 @@ const Game = ({ handleTheme, theme, verifyLetter}) => {
     <div className={`theme ${theme ? 'light' : 'dark'}`}>
     <div className="game">
       <p className="points">
-          <span>Pontuação: 000</span>
+          <span>Pontuação: {score}</span>
       </p>
       <h1>Advinhe a palavra:</h1>
       <h3 className="tip">
-        Dica sobre a palavra: <span className="category">Fruta</span>
-        <p>Você ainda tem 3 tentativa(s)</p>
+        Dica sobre a palavra: <span className="category">{pickedCategory}</span>
+        <p>Você ainda tem {guesses} tentativa(s)</p>
       </h3>
 
       <div className="centerContent">
      
       <div className={`theme ${theme ? 'wordContainerLight' : 'wordContainerDark'}`}>
-        <span className={`theme ${theme ? 'letterLight' : 'letterDark'}`}>A</span>
-        <span className={`theme ${theme ? 'blankSquareLight' : 'blankSquareDark'}`}></span>
-        <span className={`theme ${theme ? 'blankSquareLight' : 'blankSquareDark'}`}></span>
-        <span className={`theme ${theme ? 'blankSquareLight' : 'blankSquareDark'}`}></span>
-        <span className={`theme ${theme ? 'blankSquareLight' : 'blankSquareDark'}`}></span>
+       {letters.map((letter, i) => (
+        guessedLetters.includes(letter) ? (
+          <span className={`theme ${theme ? 'letterLight' : 'letterDark'}`}>{letter}</span>
+        ) : (   
+          <span key={i} className={`theme ${theme ? 'blankSquareLight' : 'blankSquareDark'}`}></span>
+        )
+       ))}
         
       </div>
       </div>
@@ -48,8 +60,9 @@ const Game = ({ handleTheme, theme, verifyLetter}) => {
       </div>
       <div className="wrongLettersContainer">
         <p>Letras já utilizadas:</p>
-        <span> a,</span>
-        <span> b,</span>
+        {wrongLetters.map((letter, i) => (
+          <span key={i}>{letter}, </span>
+        ) )}
       </div>
       
         
