@@ -1,7 +1,7 @@
 import "./Game.scss";
 import "./Theme.scss";
 import Theme from "./Theme";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const Game = ({ 
   handleTheme, 
@@ -15,13 +15,16 @@ const Game = ({
   score,
 }) => {
       const [letter, setLetter] = useState("");
+      const letterInputRef = useRef(null);
       
       const handleSubmit = (e) => {
         e.preventDefault();
 
         verifyLetter(letter);
 
-        setLetter("")
+        setLetter("");
+
+        letterInputRef.current.focus();
       }
 
   return (
@@ -54,7 +57,15 @@ const Game = ({
       <div className={`theme ${theme ? 'letterContainerLight' : 'letterContainerDark'}`}>
         <p>Tente advinhar uma letra da palavra: </p>
         <form onSubmit={handleSubmit}>
-          <input type="text" name="letter" maxLength="1" required onChange={(e) => setLetter(e.target.value)}/>
+          <input 
+          type="text" 
+          name="letter" 
+          maxLength="1" 
+          required 
+          onChange={(e) => setLetter(e.target.value)}
+          value={letter}
+          ref={letterInputRef}
+          />
           <button>Jogar!</button>
         </form>
       </div>
