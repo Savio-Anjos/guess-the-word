@@ -45,7 +45,7 @@ const Game = ({
       <div className={`theme ${theme ? 'wordContainerLight' : 'wordContainerDark'}`}>
        {letters.map((letter, i) => (
         guessedLetters.includes(letter) ? (
-          <span className={`theme ${theme ? 'letterLight' : 'letterDark'}`}>{letter}</span>
+          <span key={i} className={`theme ${theme ? 'letterLight' : 'letterDark'}`}>{letter}</span>
         ) : (   
           <span key={i} className={`theme ${theme ? 'blankSquareLight' : 'blankSquareDark'}`}></span>
         )
