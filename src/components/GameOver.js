@@ -1,11 +1,14 @@
 import "./GameOver.scss";
 import "./Theme.scss";
 import Theme from "./Theme";
-const GameOver = ({ theme, handleTheme, retry }) => {
+const GameOver = ({ theme, handleTheme, retry, score }) => {
   return (
    
          <div className={`theme ${theme ? 'light' : 'dark'}`}>
-        <h1>Game over</h1>
+        <h1>Fim de jogo!</h1>
+        <h2>
+          A sua pontuação foi: <span>{score}</span>
+        </h2>
         <button className="button" onClick={retry}>Resetar Jogo</button>
         <Theme  theme={theme} handleTheme={handleTheme}/>
     </div>

@@ -157,6 +157,7 @@ function App() {
        handleTheme={handleTheme} 
        theme={theme}
        retry={retry}
+       score={score}
        />}
      
     </div>
