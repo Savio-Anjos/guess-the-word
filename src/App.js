@@ -115,6 +115,7 @@ function App() {
         setWrongLetters([]);
       }
 
+      // check if guesses ended
       useEffect(() => {
           if(guesses <= 0) {
             // reset all states
@@ -122,6 +123,22 @@ function App() {
             setGameStage(stages[2].name)
           }
       }, [guesses])
+
+      // check win condition
+      useEffect(() => {
+
+        const uniqueLetters = [... new Set(letters)];
+
+        // win condition
+        if(guessedLetters.length === uniqueLetters.length) {
+          //Add score
+          setScore((actualScore) => actualScore += 100);
+
+          // restart game with mew word
+          startGame();
+        }
+
+      }, [guessedLetters])
 
       // restarts the game
       const retry = () => {
