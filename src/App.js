@@ -102,12 +102,17 @@ function App() {
             ...actualWrongLetters,
             normalizedLetter
           ]);
+
+          setGuesses((actualGuesses) => actualGuesses - 1 );
         }
 
       };
 
-      console.log(guessedLetters);
-  
+      useEffect(() => {
+          if(guesses === 0) {
+            setGameStage(stages[2].name)
+          }
+      }, [guesses])
 
       // restarts the game
       const retry = () => {
