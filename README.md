@@ -48,7 +48,7 @@ npm start
 ```
 
 ## 🖼️ Layout
-<img src=".github/loyout.png"m 
+<img src=".github/loyout.png" />
 
 ---
 <p>Criado com 💙 por <a href='https://github.com/Savio-Anjos/' target='_blank'>Sávio Anjos</a></p>
