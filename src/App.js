@@ -33,7 +33,7 @@ function App() {
       const [guessedLetters, setGuessedLettes] = useState([]);
       const [wrongLetters, setWrongLetters] =useState([]);
       const [guesses, setGuesses] = useState(guessesQty);
-      const [score, setScore] = useState(-200);
+      const [score, setScore] = useState(-100);
       const [animationWin, setAnimationWin] = useState(false);
 
       const handleTheme = () => {
