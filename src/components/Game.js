@@ -2,6 +2,8 @@ import "./Game.scss";
 import "./Theme.scss";
 import Theme from "./Theme";
 import { useState, useRef } from "react";
+import Lottie from 'react-lottie';
+import animationGuessedWordAnimationDate from './guessedWordAnimation.json'
 
 const Game = ({ 
   handleTheme, 
@@ -13,9 +15,14 @@ const Game = ({
   wrongLetters,
   guesses,
   score,
+  animationWin,
 }) => {
       const [letter, setLetter] = useState("");
       const letterInputRef = useRef(null);
+
+      const [animationState, setAnimationState] = useState({
+        isStopped: false, isPaused: false
+      });
       
       const handleSubmit = (e) => {
         e.preventDefault();
@@ -25,6 +32,15 @@ const Game = ({
         setLetter("");
 
         letterInputRef.current.focus();
+      }
+      
+      const optionsGuessedWord = {
+        loop: true,
+        autoplay: true, 
+        animationData: animationGuessedWordAnimationDate,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
       }
 
   return (
@@ -41,8 +57,19 @@ const Game = ({
       </h3>
 
       <div className="centerContent">
-     
-      <div className={`theme ${theme ? 'wordContainerLight' : 'wordContainerDark'}`}>
+
+        {
+          animationWin ?
+          <Lottie 
+          options={optionsGuessedWord}
+          height={400}
+          width={800}
+          isStopped={animationState.isStopped}
+          isPaused={animationState.isPaused}  
+          /> 
+          :
+
+       <div className={`theme ${theme ? 'wordContainerLight' : 'wordContainerDark'}`}>
        {letters.map((letter, i) => (
         guessedLetters.includes(letter) ? (
           <span key={i} className={`theme ${theme ? 'letterLight' : 'letterDark'}`}>{letter}</span>
@@ -52,6 +79,9 @@ const Game = ({
        ))}
         
       </div>
+        }
+     
+      
       </div>
 
       <div className={`theme ${theme ? 'letterContainerLight' : 'letterContainerDark'}`}>

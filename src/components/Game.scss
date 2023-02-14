@@ -151,5 +151,46 @@
       }
       }
 
+      @media (max-width: 1000px) {
+         .wordContainerDark {
+          max-width: 600px;
+         } 
+
+         .letterLight,
+         .blankSquareLight {
+          width: 85px;
+          height: 75px;
+         }
+
+         .letterDark,
+         .blankSquareDark {
+          width: 85px;
+          height: 85px;
+
+         }
+
+       
+      }
+
+      @media (max-width: 650px) {
+        .wordContainerDark {
+         max-width: 500px;
+        } 
+
+        .letterContainerLight input {
+            height: 15px;
+            width: 30px;
+        }
+
+         .wordContainerLight {
+         max-width: 500px;
+        } 
+
+        .letterContainerDark input {
+          height: 15px;
+          width: 30px;
+        }
+     }
+
       
   
