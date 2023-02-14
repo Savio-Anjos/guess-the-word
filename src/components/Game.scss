@@ -154,43 +154,84 @@
       @media (max-width: 1000px) {
          .wordContainerDark {
           max-width: 600px;
+          
+          border: 10px solid #06b6d4;
+         } 
+
+         .wordContainerLight {
+          max-width: 600px;
+          border: 15px solid #155e75;
          } 
 
          .letterLight,
          .blankSquareLight {
+          font-size: 55px;
           width: 85px;
           height: 75px;
          }
 
          .letterDark,
          .blankSquareDark {
+          font-size: 55px;
           width: 85px;
-          height: 85px;
+          height: 75px;
 
-         }
-
-       
+         }  
       }
 
-      @media (max-width: 650px) {
+      @media (max-width: 575px) {
         .wordContainerDark {
-         max-width: 500px;
-        } 
-
-        .letterContainerLight input {
-            height: 15px;
-            width: 30px;
+         max-width: 400px;
         }
 
          .wordContainerLight {
          max-width: 500px;
         } 
 
-        .letterContainerDark input {
-          height: 15px;
-          width: 30px;
+        .letterLight,
+        .blankSquareLight {
+         font-size: 45px;
+         width: 70px;
+         height: 65px;
         }
+
+        .letterDark,
+        .blankSquareDark {
+         font-size: 45px;
+         width: 70px;
+         height: 60px;
+
+        } 
+
+       
      }
+
+     @media (max-width: 475px) {
+      .wordContainerDark {
+       max-width: 300px;
+      }
+
+       .wordContainerLight {
+       max-width: 300px;
+      } 
+
+      .letterLight,
+      .blankSquareLight {
+       font-size: 25px;
+       width: 50px;
+       height: 35px;
+      }
+
+      .letterDark,
+      .blankSquareDark {
+       font-size: 25px;
+       width: 50px;
+       height: 35px;
+
+      } 
+
+     
+   }
 
       
   
