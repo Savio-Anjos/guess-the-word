@@ -11,30 +11,26 @@ Esse projeto está utilizando as seguintes tecnologias:
     
 
 - [React](https://pt-br.reactjs.org/)
-- [Node](https://nodejs.org/en/)
-- [Typescript](https://www.typescriptlang.org/)  
-- [Next](https://nextjs.org//)  
-- [React-Native](https://reactnative.dev/)
+- [Lottie](https://lottiefiles.com/)
 
 
-## ⚙️ Funcionalidades
-- Sistema de cadastro e login de usuários;
-- Criar novas categorias;
-- Listar produtos por categoria;
-- Cadastrar novos produtos;
-- Envio de imagem para logo do produto;
-- Deletar produto;
-- Criar uma ordem e adicionar pedidos;
 
-## 🎲 Como utilizar
+## ⚙️ Como funciona?
+- Seleciona categoria e palavra de forma aleatória
+- Usuário possui 3 vidas
+- Caso perca o usuario é levado para tela de GameOver
+- Caso acerte uma nova palavra é escolhida
+
+## 🎲 Ques customizar o projeto?
 ### Clone esse repositório
 ```bash
-git clone https://github.com/Savio-Anjos/SujeitoPizza.git
+git clone https://github.com/Savio-Anjos/guess-the-word.git
 
 ```
-### Navegue até o diretório backend
+
+### Navegue até o diretório do projeto
 ```bash 
-cd backend
+cd guess-the-word
 ```
 
 ### Instale as dependências
@@ -44,29 +40,10 @@ npm i
 ```bash
 yarn
 ```
-
-### Inicie o servidor
+### Inicie a aplicação 
 ```bash
-yarn dev
-npm run dev
-```
-
-### Navegue até o diretório frontend
-```bash 
-cd frontend
-```
-
-### Instale as dependências
-```bash
-npm i
-```
-```bash
-yarn
-```
-### Inicie a aplicação Web
-```bash
-yarn dev
-npm run dev
+yarn start
+npm start
 ```
 
 ## 🖼️ Layout
