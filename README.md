@@ -2,9 +2,9 @@
 
  <p align='center'>
 
-<img src="https://img.shields.io/github/repo-size/Savio-Anjos/guess-the-word.git?color=06b6d4">
-<img src="https://img.shields.io/github/languages/count/Savio-Anjos/guess-the-word.git?color=06b6d4">
-<img src="https://img.shields.io/github/last-commit/Savio-Anjos/guess-the-word.git?color=06b6d4"> 
+<img src="https://img.shields.io/github/repo-size/Savio-Anjos/guess-the-word?color=06b6d4">
+<img src="https://img.shields.io/github/languages/count/Savio-Anjos/guess-the-word?color=06b6d4">
+<img src="https://img.shields.io/github/last-commit/Savio-Anjos/guess-the-word?color=06b6d4"> 
 </p>
 
 ## 🚀 Tecnologias
