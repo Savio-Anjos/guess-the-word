@@ -2,9 +2,9 @@
 
  <p align='center'>
 
-<img src="https://img.shields.io/github/repo-size/Savio-Anjos/guess-the-word?color=06b6d4">
-<img src="https://img.shields.io/github/languages/count/Savio-Anjos/guess-the-word?color=06b6d4">
-<img src="https://img.shields.io/github/last-commit/Savio-Anjos/guess-the-word?color=06b6d4"> 
+<img src="https://img.shields.io/github/repo-size/Savio-Anjos/guess-the-word?color=3B82F6">
+<img src="https://img.shields.io/github/languages/count/Savio-Anjos/guess-the-word?color=3B82F6">
+<img src="https://img.shields.io/github/last-commit/Savio-Anjos/guess-the-word?color=3B82F6"> 
 </p>
 
 ## 🚀 Tecnologias
@@ -22,7 +22,7 @@ Esse projeto está utilizando as seguintes tecnologias:
 - Caso perca o usuario é levado para tela de GameOver
 - Caso acerte uma nova palavra é escolhida
 
-## 🎲 Ques customizar o projeto?
+## 🎲 Quer customizar o projeto?
 ### Clone esse repositório
 ```bash
 git clone https://github.com/Savio-Anjos/guess-the-word.git
