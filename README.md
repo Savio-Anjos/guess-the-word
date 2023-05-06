@@ -1,6 +1,6 @@
 <p align='center'><img width='400' src="./.github/logo.svg"/></p>
 
- <p align='center'>
+ <p align='center'> 
 
 <img src="https://img.shields.io/github/repo-size/Savio-Anjos/guess-the-word?color=3B82F6">
 <img src="https://img.shields.io/github/languages/count/Savio-Anjos/guess-the-word?color=3B82F6">
