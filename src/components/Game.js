@@ -96,7 +96,7 @@ const Game = ({
           value={letter}
           ref={letterInputRef}
           />
-          <button>Jogar!</button>
+          <button name="jogar">Jogar!</button>
         </form>
       </div>
       <div className="wrongLettersContainer">
